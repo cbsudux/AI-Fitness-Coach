@@ -1,0 +1,33 @@
+"""
+Making life with GCP easier
+"""
+
+### MOUNTING INSANCE ON NAUTILUS
+"""
+For using a GUI on remote system. Best way to use Sublime or any IDE
+"""
+
+- Go to VM instances page.
+- There is usually an external IP assigned to the running instance (Only running)
+- Open Nautilus. Click 'connect to server' and type : sftp://user@external_ip
+- How to find user? type 'whoami' when you ssh
+
+
+No external IP? --> Follow this : https://cloud.google.com/compute/docs/ip-addresses/reserve-static-external-ip-address
+
+### ZSH
+"""
+ZSH is awesome >>>>>> bash
+"""
+
+- Use this to install : https://gist.github.com/rexlow/afbfb40295fb0f0fbd50a45185293e8e
+
+
+### X11 Forwarding
+
+- sudo apt-get install xauth  --> in instance
+- Uncomment 'X11UseLocalhost no' in /etc/ssh/sshd_config
+- Log out and log in with 'ssh-flag=-Y'
+
+
+
